@@ -1,7 +1,7 @@
-````markdown
 # 🌱 Plant Disease Detection System
 
-This project is a **deep learning-based system** for detecting plant diseases from leaf images. It uses **transfer learning** with pre-trained CNN models to classify images of apple, potato, and tomato leaves into **healthy** or **diseased** categories.
+This project is a **deep learning-based system** for detecting plant diseases from leaf images.  
+It uses **transfer learning** with pre-trained CNN models to classify apple, potato, and tomato leaves as **healthy** or **diseased**.
 
 ---
 
@@ -9,16 +9,17 @@ This project is a **deep learning-based system** for detecting plant diseases fr
 
 - Two selectable models: **ResNet50** and **MobileNetV2**
 - Upload a leaf image and get real-time disease prediction
-- Shows prediction confidence and class probabilities
-- Displays overall model test accuracy
+- Displays prediction confidence and class probabilities
+- Shows overall model test accuracy
 - Interactive **Streamlit GUI**
 
 ---
 
 ## 📂 Dataset
 
-The [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset) was used for this project, which contains images of healthy and diseased plant leaves.  
-For this project, 9 classes were selected:
+The project uses the [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset), which contains images of healthy and diseased plant leaves.
+
+For this project, **9 classes** were selected:
 
 - **Apple**: Apple Scab, Black Rot, Healthy
 - **Potato**: Early Blight, Late Blight, Healthy
@@ -28,28 +29,43 @@ For this project, 9 classes were selected:
 
 ## 🧠 Models
 
-### 1. **ResNet50**
+### 1. ResNet50
 
 - Deep CNN with residual connections
-- Accuracy achieved: **99%**
+- Achieved **99% accuracy**
 
-### 2. **MobileNetV2**
+### 2. MobileNetV2
 
 - Lightweight CNN optimized for mobile/edge devices
-- Accuracy achieved: **97%**
+- Achieved **97% accuracy**
+
+---
+
+## 📊 Results
+
+- **ResNet50** → **99% test accuracy**
+- **MobileNetV2** → **97% test accuracy**
+
+### Visualizations
+
+![Streamlit UI - Part 1](results/Interface_part1.png)  
+![Streamlit UI - Part 2](results/Interface_part2.png)  
+![Confusion Matrix - ResNet50](results/resnet_confusion_matrix.png)  
+![Confusion Matrix - MobileNetV2](results/moblienet_confusion_matrix.png)
+
+🔗 **Deployed App**: [Plant Disease Detection (Streamlit)](https://plant-disease-detection-classification-kxhhccldyzgfq4yunnqcsv.streamlit.app/)
 
 ---
 
 ## 🛠️ Installation
 
-Clone the repo and install dependencies:
+Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/your-username/plant-disease-detection.git
 cd plant-disease-detection
 pip install -r requirements.txt
 ```
-````
 
 Run the Streamlit app:
 
@@ -58,26 +74,3 @@ streamlit run app.py
 ```
 
 ---
-
-## 📊 Results
-
-- **ResNet50** achieved **99% test accuracy**
-- **MobileNetV2** achieved **97% test accuracy**
-
-```markdown
-![Streamlit UI](results/Interface_part1.png)
-![Streamlit UI](results/Interface_part2.png)
-![Confusion Matrix - ResNet50](results/resnet_confusion_matrix.png)
-![Confusion Matrix - MobileNetV2](results/moblienet_confusion_matrix.png)
-```
-
----
-
----
-
-```
-
----
-
-
-```
